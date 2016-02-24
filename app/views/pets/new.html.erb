@@ -1,0 +1,12 @@
+<h1>Pets#new</h1>
+<p>Find me in app/views/pets/new.html.erb</p>
+
+<%= simple_form_for @pets do |f| %>
+    <%= f.input :name %>
+    <%= f.input :weight %>
+    <%= f.input :age %>
+    <%= f.input :sex, collection: ['male', 'female'] %>
+    <%= f.input :breed %>
+    <%= f.input :description %>
+    <%= f.button :submit %>
+<% end %>
